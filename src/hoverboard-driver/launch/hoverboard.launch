@@ -1,0 +1,20 @@
+<launch>
+
+    <param name="port" type="str" value="/dev/martbot/ftdi"/>
+
+    <rosparam file="$(find hoverboard_driver)/config/hardware.yaml" command="load"/>
+    <rosparam file="$(find hoverboard_driver)/config/controllers.yaml" command="load"/>
+
+    <node name="hoverboard_driver" pkg="hoverboard_driver" type="hoverboard_driver" output="screen"/>
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+        args="hoverboard_joint_publisher hoverboard_velocity_controller" />
+
+    <!-- cmd_vel muxer -->
+    <node pkg="twist_mux" type="twist_mux" name="twist_mux">
+        <rosparam command="load" file="$(find hoverboard_driver)/config/twist_mux.yaml" />
+        <remap from="cmd_vel_out" to="hoverboard_velocity_controller/cmd_vel"/> 
+    </node>
+
+</launch>
+
+
