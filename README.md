@@ -13,28 +13,37 @@ MartBot features a differential drive configuration optimized for supermarket en
 - **Sensor Mounts:** Dedicated slots for depth camera and LiDAR placement, with an optimized height and field of view
 
 
+<div align="center">
+
 <table>
   <tr>
-    <td align="center">
+    <td>
       <img src="images/Robot Base.png" alt="MartBot Front View" width="300"/>
     </td>
-    <td align="center">
-      <img src="images/Actuator Mounting.png" alt="MartBot Side View" width="270"/>
+    <td>
+      <img src="images/Actuator Mounting.png" alt="MartBot Side View" width="300"/>
     </td>
   </tr>
 </table>
 
-<p align="center"><b>MartBot Chassis</b></p>
+<p><b>MartBot Chassis</b></p>
+
+</div>
+
+
+<div align="center">
 
 <table>
   <tr>
     <td align="center">
-      <img src="images/CAD model.png" alt="MartBot CAD Model" width="240"/>
+      <img src="images/CAD Model.PNG" alt="MartBot CAD Model" width="240"/>
     </td>
     <td align="center">
-      <img src="images/MartBot.png" alt="MartBot Prototype" width="250"/>
+      <img src="images/MartBot.PNG" alt="MartBot Prototype" width="250"/>
     </td>
   </tr>
 </table>
 
-<p align="center"><b> MartBot CAD Model and Prototype </b></p>
+<p><b>MartBot CAD Model and Prototype </b></p>
+
+</div>
