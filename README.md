@@ -39,7 +39,7 @@ MartBot features a differential drive configuration optimized for supermarket en
       <img src="images/CAD Model.PNG" alt="MartBot CAD Model" width="240"/>
     </td>
     <td align="center">
-      <img src="images/MartBot.PNG" alt="MartBot Prototype" width="250"/>
+      <img src="images/Martbot.PNG" alt="MartBot Prototype" width="250"/>
     </td>
   </tr>
 </table>
