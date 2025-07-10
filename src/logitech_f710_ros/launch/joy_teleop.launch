@@ -1,0 +1,14 @@
+<launch>
+    <!-- Joystick Node -->
+    <node name="f710_joy_node" pkg="joy" type="joy_node" output="screen">
+        <!-- Joystick device path -->
+        <param name="dev" value="/dev/input/js0"/> 
+        <!-- Disable force feedback -->
+        <param name="dev_ff" value=""/>
+        <!-- Set the autorepeat rate -->
+        <param name="autorepeat_rate" type="double" value="10"/>
+    </node>
+
+    <!-- Teleop Joy Node -->
+    <node name="f710_teleop_joy_node" pkg="logitech_f710_joy_ros" type="f710_teleop_joy" output="screen"/>
+</launch>
